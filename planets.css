@@ -1,0 +1,296 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body{
+    background-image: url('./assets/universo-bg.jpg');
+    background-size: cover;
+}
+
+header{
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-img{
+    height: 55px;
+    transition: 0.5s;
+}
+
+.logo-img:hover{
+    transform: scale(1.06)
+}
+
+.header-navigation{
+    width: 550px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-nav{
+    width: 70%;
+}
+
+.header-ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item-nav{
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1rem;
+}
+
+.item-nav:hover{
+    color: gold;
+}
+
+.social-media{
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+i{
+    font-size: 1.2rem;
+}
+
+i:hover{
+    color: gold;
+}
+
+.main-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: gold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.cards{
+    width: 230px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.card-foto{
+    width: 90%;
+    height: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.card-name{
+    width: 90%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 12px;
+}
+
+.planet-name{
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1rem;
+    color: gold;
+}
+
+.buttons{
+    width: 65%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    width: 70px;
+    height: 25px;
+    background-color: gold;
+    color: #000;
+    border-radius: 3px;
+    border: 1px solid #000;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #000;
+    color: gold;
+}
+
+footer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    row-gap: 20px;
+    text-align: center;
+}
+
+#back-button{
+    visibility: hidden;
+}
+
+.footer-logo{
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.footer-nav{
+    width: 70%;
+    display: none;
+}
+
+.footer-ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.footer-social-media{
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    visibility: hidden;
+}
+
+.modal-content{
+    width: 25vw;
+    height: 450px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    background-color: #0d0d0d;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.planet-foto{
+    width: 200px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+.planet-infos{
+    font-family: 'Star Wars', sans-serif;
+    color: gold;
+    font-size: 1 rem;
+    font-weight: 300;
+}
+
+@media(min-width: 680px) and (max-width: 1000px){
+    .modal-content{
+        width: 45vw;
+        height: auto;
+    }
+}
+
+@media(min-width: 590px) and (max-width: 679px){
+    .modal-content{
+        width: 45vw;
+        height: auto;
+    }
+}
+
+@media(min-width: 465px) and (max-width: 589px){
+        .modal-content{
+            width: 45vw;
+            height: auto;
+        }
+        .modal-image{
+            width: 150px;
+            height: 150px;
+        }
+        .social-media{
+            display: none;
+        }
+        .footer-social-media{
+            display: block;
+        }
+    }
+
+@media(max-width: 464px){
+    .modal-content{
+        width: 85vw;
+        height: auto;
+    }
+    .modal-image{
+        width: 150px;
+        height: 150px;
+    }
+    .social-media{
+        display: none;
+    }
+    .footer-social-media{
+        display: block;
+    }
+    .header-nav{
+        display: none;
+    }
+    .footer-nav{
+        display:block;
+    }
+}
