@@ -241,21 +241,14 @@ footer{
     font-weight: 300;
 }
 
-@media(min-width: 680px) and (max-width: 1000px){
+@media (max-width: 1000px){
     .modal-content{
         width: 45vw;
         height: auto;
     }
 }
 
-@media(min-width: 590px) and (max-width: 679px){
-    .modal-content{
-        width: 45vw;
-        height: auto;
-    }
-}
-
-@media(min-width: 465px) and (max-width: 589px){
+@media (max-width: 589px){
         .modal-content{
             width: 45vw;
             height: auto;

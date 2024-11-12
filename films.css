@@ -99,7 +99,7 @@ h2{
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     column-gap: 20px;
-    row-gap: 10px;
+    row-gap: 30px;
     padding: 0 20px;
 }
 
@@ -210,7 +210,7 @@ footer{
     font-weight: lighter;   
 }
 
-@media(min-width: 680px) and (max-width: 1000px){
+@media (max-width: 1000px){
     .main-content{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -221,7 +221,7 @@ footer{
     }
 }
 
-@media(min-width: 590px) and (max-width: 679px){
+@media (max-width: 679px){
     .main-content{
         display: grid;
         grid-template-columns: 1fr;
@@ -232,7 +232,7 @@ footer{
     }
 }
 
-@media(min-width: 465px) and (max-width: 589px){
+@media (max-width: 589px){
     .main-content{
         display: grid;
         grid-template-columns: 1fr;
